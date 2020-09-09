@@ -7,7 +7,8 @@
 /* global $ */
 
 (() => {
-  function clipAllCoupons () {
+  function clipAllCoupons (e) {
+    const theButton = $(e.target)
     theButton.prop('disabled', true)
     setInterval(() => {
       theButton.text('getting all coupons...')
@@ -29,17 +30,17 @@
     }, 2000)
   }
 
-  const theButton = $('<button/>')
-  theButton.css('position', 'fixed')
-  theButton.css('top', '0')
-  theButton.css('right', '0')
-  theButton.css('width', '100px')
-  theButton.css('height', '50px')
-  theButton.css('border', '3px solid #000')
-  theButton.css('border-radius', '25px')
-  theButton.css('background-color', '#080')
-  theButton.css('z-index', '99')
-  theButton.text('Clip all coupons')
-  theButton.click(clipAllCoupons)
-  theButton.appendTo(document.body)
+  $('<button/>')
+    .css('position', 'fixed')
+    .css('top', '0')
+    .css('right', '0')
+    .css('width', '100px')
+    .css('height', '50px')
+    .css('border', '3px solid #000')
+    .css('border-radius', '25px')
+    .css('background-color', '#080')
+    .css('z-index', '99')
+    .text('Clip all coupons')
+    .click(clipAllCoupons)
+    .appendTo(document.body)
 })()
