@@ -1,7 +1,21 @@
 // ==UserScript==
 // @name        SafewayJ4UClipper
-// @description Clip all coupons on the Safeway website
-// @match       https://www.safeway.com/justforu/coupons*
+// @description Clip all coupons on many Albertsons companies' websites.
+// @match       https://www.acmemarkets.com/*/coupons-deals.html
+// @match       https://www.albertsons.com/*/coupons-deals.html
+// @match       https://www.andronicos.com/*/coupons-deals.html
+// @match       https://www.balduccis.com/*/coupons-deals.html
+// @match       https://www.carrsqc.com/*/coupons-deals.html
+// @match       https://www.haggen.com/*/coupons-deals.html
+// @match       https://www.jewelosco.com/*/coupons-deals.html
+// @match       https://www.kingsfoodmarkets.com/*/coupons-deals.html
+// @match       https://www.pavillions.com/*/coupons-deals.html
+// @match       https://www.randalls.com/*/coupons-deals.html
+// @match       https://www.safeway.com/*/coupons-deals.html
+// @match       https://www.shaws.com/*/coupons-deals.html
+// @match       https://www.starmarket.com/*/coupons-deals.html
+// @match       https://www.tomthumb.com/*/coupons-deals.html
+// @match       https://www.vons.com/*/coupons-deals.html
 // ==/UserScript==
 
 /* global $ */
@@ -44,3 +58,4 @@
     .click(clipAllCoupons)
     .appendTo(document.body)
 })()
+
